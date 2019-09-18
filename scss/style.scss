@@ -1,0 +1,276 @@
+$white:#fff;
+$black:#000;
+$text-color:#535050;
+$gray-bg:#d9d9d9;
+$pink:#ff0032;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $black;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: $white;
+}
+
+p {
+  line-height: 1.4;
+  color: $text-color;
+}
+input,button {
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn {
+  display: none;
+  background-color: transparent;
+  border: 2px solid $white;
+  color: $white;
+  font-size: 18px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.inputs {
+  border: 2px solid #333;
+  background-color: #242424;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: $text-color;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.4);
+  border-bottom: 2px solid $white;
+  .nav-bar {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 14px 0;
+    .nav {
+      margin: 0 0 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2,max-content);
+      .nav-items{
+        display: block;
+        font-size: 18px;
+        padding: 15px 10px;
+      }
+    }
+  }
+}
+
+
+.banner {
+  background: url("./../images/bg-hs-mp.jpg") no-repeat top center;
+  background-size: cover;
+  padding: 40vh 0;
+  .banner-content {
+    text-align: center;
+    color: $white;
+    h1 {
+       text-transform: uppercase;
+      font-size: 50px;
+      margin: 0 0 10px;
+    }
+    h2 {
+      font-size: 35px;
+      color: $text-color;
+    }
+  }
+}
+
+.classes-wrapper {
+  background-color: $pink ;
+  .classes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: $white;
+    min-height: 450px;
+    align-content: end;
+    .women-class {
+      padding: 80px 0 80px 190px;
+      background: url("./../images/image-2.png") no-repeat left bottom;
+      h2 {
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+        color: $white;
+        margin: 25px 0;
+      }
+    }
+    .men-class {
+      padding: 80px 190px 80px 0;
+      background: url("./../images/image-1.png") no-repeat right bottom;
+      text-align: right;
+      p {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.trainer1-wrapper{
+  background: url("../images/men-trainer.jpg") no-repeat top center;
+  background-size: cover;
+}
+.trainer {
+  padding: 30vh 0;
+  h2 {
+    color: $white;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+}
+
+
+.trainer2-wrapper {
+  background:$gray-bg ;
+  .trainer-img {
+    background: url("../images/women-trainer.png") no-repeat bottom center;
+    background-size: cover;
+  }
+  .women-trainers {
+    h2 {
+      color: $black;
+    }
+  }
+}
+
+.best-trainer {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.footer {
+  padding: 60px 0;
+  .footer-content {
+    color: $text-color;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    grid-gap: 60px;
+    align-content: center;
+    .copy-rights {
+      display: flex;
+      flex-direction: column;
+      .social-icons {
+        margin: auto 0;
+        a {
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid #333;
+          background-color: #242424;
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+
+    .location {
+      h4 {
+        margin: 0 0 15px;
+        font-size: 24px;
+      }
+      p {
+        margin: 0 0 7px;
+      }
+      .inputs {
+        margin: 20px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .container {
+    padding:0 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .classes-wrapper {
+    .classes {
+      margin: 0 -15px;
+      .women-class {
+          grid-column: 1/3;
+        min-height: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    .banner-content {
+      h1{
+        font-size: 38px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+  .trainer {
+    p{
+      font-size: 20px;
+    }
+  }
+  .footer {
+    text-align: center;
+    .footer-content {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      .copy-rights {
+        .social-icons {
+          margin: 15px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banner {
+    .banner-content {
+      h1{
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}

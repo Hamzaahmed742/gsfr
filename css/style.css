@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #000;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+p {
+  line-height: 1.4;
+  color: #fff; }
+
+input, button {
+  outline: none;
+  font-family: 'Nunito', sans-serif; }
+
+.btn {
+  display: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.inputs {
+  border: 2px solid #fff;
+  background-color: #fff;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: #535050; }
+
+.pink-text {
+  color: #fff; }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.14);
+  border-bottom: 2px solid #fff; }
+  .header .nav-bar {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 14px 0; }
+    .header .nav-bar .nav {
+      margin: 0 0 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, max-content); }
+      .header .nav-bar .nav .nav-items {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 15px 10px; }
+
+.banner {
+  background: url("./../images/bg-hs-mp.jpg") no-repeat top center;
+  background-size: cover;
+  padding: 40vh 0; }
+  .banner .banner-content {
+    text-align: center;
+    color: #fff; }
+    .banner .banner-content h1 {
+      text-transform: uppercase;
+      font-size: 50px;
+      margin: 0 0 10px; }
+    .banner .banner-content h2 {
+      font-size: 35px;
+      color: #535050; }
+
+.classes-wrapper {
+  background-color: #ff0032; }
+  .classes-wrapper .classes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    min-height: 450px;
+    align-content: end; }
+    .classes-wrapper .classes .women-class {
+      padding: 124px 0 80px 190px;
+      background: url("./../images/image-2.png") no-repeat left bottom; }
+      .classes-wrapper .classes .women-class h2 {
+        text-transform: uppercase;
+        font-size: 24px; }
+      .classes-wrapper .classes .women-class p {
+        font-size: 20px;
+        color: #fff;
+        margin: 25px 0; }
+    .classes-wrapper .classes .men-class {
+      padding: 124px 190px 80px 0;
+      background: url("./../images/image-1.png") no-repeat right bottom;
+      text-align: right; }
+      .classes-wrapper .classes .men-class p {
+        text-align: right; }
+
+.trainer1-wrapper {
+  background: url("../images/waseem.jpg") no-repeat top center;
+  background-size: cover; }
+
+  .trainer3-wrapper {
+    background: url("../images/saad-new.png") no-repeat top center;
+    background-size: cover; }
+.trainer {
+  padding: 30vh 0; }
+  .trainer .trainer-subline {
+    margin: 0px;
+  }
+  .trainer h2 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase; }
+  .trainer p {
+    font-size: 24px;
+    margin: 15px 0; }
+
+.trainer2-wrapper {
+    background: url("../images/sidra.jpg") no-repeat bottom center;
+    background-size: cover; 
+  }
+  .trainer4-wrapper {
+    background: url("../images/arham.jpg") no-repeat bottom center;
+    background-size: cover; 
+  }
+  .trainer2-wrapper .women-trainers h2 {
+    color: #000; }
+
+.best-trainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+  .img-circle{
+    display: none;
+  }
+
+  .brag-container {
+    text-transform: uppercase;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+  .brag-padding {
+    padding: 60px;
+  }
+  .helpline {
+    background-color: #100f0f;
+  }
+  .largest-team {
+    background-color: #e43d2d;
+
+  }
+  .best-crew {
+    background-color: #ad1e11;
+    
+  }
+.footer {
+  background-color: #b92e21;
+  padding: 60px 0; }
+  .footer .footer-content {
+    color: #ffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 60px;
+    align-content: center; }
+    .footer .footer-content .copy-rights {
+      display: flex;
+      flex-direction: column; }
+      .footer .footer-content .copy-rights .social-icons {
+        margin: auto 0; }
+        .footer .footer-content .copy-rights .social-icons a {
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid #333;
+          background-color: #242424;
+          height: 40px;
+          width: 40px; }
+    .footer .footer-content .location img {
+      padding: 1px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .footer .footer-content .location h4 {
+      margin: 0 0 15px;
+      font-size: 24px; }
+    .footer .footer-content .location p {
+      margin: 0 0 7px; }
+    .footer .footer-content .location .inputs {
+      margin: 20px 0 0; }
+
+@media screen and (max-width: 1195px) {
+  .container {
+    padding: 0 15px; } }
+@media screen and (max-width: 991px) {
+  .classes-wrapper .classes {
+    margin: 0 -15px; }
+    .classes-wrapper .classes .women-class {
+      grid-column: 1/3;
+      min-height: 450px; } }
+@media screen and (max-width: 768px) {
+  .banner .banner-content h1 {
+    font-size: 38px; }
+  .banner .banner-content h2 {
+    font-size: 28px; }
+
+  .trainer p {
+    font-size: 20px; 
+    text-align: justify;
+  }
+
+  .footer {
+    text-align: center; }
+    .footer .footer-content {
+      grid-template-columns: 1fr;
+      grid-gap: 30px; }
+      .footer .footer-content .copy-rights .social-icons {
+        margin: 15px 0 0; } }
+@media screen and (max-width: 640px) {
+  .img-circle img {
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  
+  .img-circle {
+    display: block !important;
+    margin: auto;
+  }
+  .best-trainer{
+    margin-top: 20px;
+
+    grid-template-columns: repeat(1,1fr);
+  }
+  .trainer{
+    padding: 10px;
+  }
+  .banner .banner-content h1 {
+    font-size: 32px; }
+  .banner .banner-content h2 {
+    font-size: 24px; } }
+
+/*# sourceMappingURL=style.css.map */
+
+
+
